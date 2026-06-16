@@ -27,6 +27,19 @@ export function Hero() {
               <span className="text-primary">emoções</span> e melhorar suas{" "}
               <span className="text-primary">reações</span>
             </h1>
+
+            <div className="relative mt-7 flex justify-center md:hidden">
+              <div className="absolute inset-0 -z-10 translate-y-4 scale-95 rounded-[2.5rem] bg-secondary/60 blur-xl" />
+              <Image
+                src="/hero-mockup.png"
+                alt="Livro e tablet do Universo das Emoções cercados pelos mascotes da turma"
+                width={640}
+                height={620}
+                priority
+                className="w-full max-w-sm drop-shadow-2xl"
+              />
+            </div>
+
             <p className="mt-5 text-pretty text-lg leading-relaxed text-muted-foreground">
               Uma coleção criada para ajudar crianças e adultos a compreenderem suas emoções com ciência, ternura e
               muita imaginação.
@@ -65,19 +78,21 @@ export function Hero() {
           </div>
         </Reveal>
 
-        <Reveal delay={0.15}>
-          <div className="relative flex justify-center">
-            <div className="absolute inset-0 -z-10 translate-y-6 scale-95 rounded-[2.5rem] bg-secondary/60 blur-xl" />
-            <Image
-              src="/hero-mockup.png"
-              alt="Livro e tablet do Universo das Emoções cercados pelos mascotes da turma"
-              width={640}
-              height={620}
-              priority
-              className="w-full max-w-lg drop-shadow-2xl"
-            />
-          </div>
-        </Reveal>
+        <div className="hidden md:block">
+          <Reveal delay={0.15}>
+            <div className="relative flex justify-center">
+              <div className="absolute inset-0 -z-10 translate-y-6 scale-95 rounded-[2.5rem] bg-secondary/60 blur-xl" />
+              <Image
+                src="/hero-mockup.png"
+                alt="Livro e tablet do Universo das Emoções cercados pelos mascotes da turma"
+                width={640}
+                height={620}
+                priority
+                className="w-full max-w-lg drop-shadow-2xl"
+              />
+            </div>
+          </Reveal>
+        </div>
       </div>
     </section>
   )
