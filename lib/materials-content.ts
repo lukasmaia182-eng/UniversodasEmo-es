@@ -154,19 +154,33 @@ export const wheelSegments = [
   { label: "Gratidão", color: "#f59e0b" },
 ]
 
-export const faceCards = [
-  { label: "Feliz", hint: "Sorria bem grande" },
-  { label: "Triste", hint: "Boca para baixo, olhos caídos" },
-  { label: "Bravo", hint: "Sobrancelhas franzidas" },
-  { label: "Assustado", hint: "Olhos arregalados" },
-  { label: "Surpreso", hint: "Boca em formato de O" },
-  { label: "Animado", hint: "Sorriso e olhos brilhando" },
-  { label: "Com sono", hint: "Olhos quase fechados, bocejo" },
-  { label: "Envergonhado", hint: "Bochechas coradas, olhar baixo" },
-  { label: "Curioso", hint: "Cabeça inclinada, olhos atentos" },
-  { label: "Orgulhoso", hint: "Queixo erguido, peito estufado" },
-  { label: "Com nojo", hint: "Nariz franzido, língua para fora" },
-  { label: "Tranquilo", hint: "Rosto relaxado, respiração calma" },
+export type FaceExpression =
+  | "feliz"
+  | "triste"
+  | "bravo"
+  | "assustado"
+  | "surpreso"
+  | "animado"
+  | "sono"
+  | "envergonhado"
+  | "curioso"
+  | "orgulhoso"
+  | "nojo"
+  | "tranquilo"
+
+export const faceCards: { label: string; hint: string; face: FaceExpression; color: string }[] = [
+  { label: "Feliz", hint: "Sorria bem grande", face: "feliz", color: "#f4b400" },
+  { label: "Triste", hint: "Boca para baixo, olhos caídos", face: "triste", color: "#5b8def" },
+  { label: "Bravo", hint: "Sobrancelhas franzidas", face: "bravo", color: "#ef4444" },
+  { label: "Assustado", hint: "Olhos arregalados", face: "assustado", color: "#8b5cf6" },
+  { label: "Surpreso", hint: "Boca em formato de O", face: "surpreso", color: "#22c1bd" },
+  { label: "Animado", hint: "Sorriso e olhos brilhando", face: "animado", color: "#f97316" },
+  { label: "Com sono", hint: "Olhos quase fechados, bocejo", face: "sono", color: "#64748b" },
+  { label: "Envergonhado", hint: "Bochechas coradas, olhar baixo", face: "envergonhado", color: "#fb7185" },
+  { label: "Curioso", hint: "Cabeça inclinada, olhos atentos", face: "curioso", color: "#0ea5e9" },
+  { label: "Orgulhoso", hint: "Queixo erguido, peito estufado", face: "orgulhoso", color: "#f59e0b" },
+  { label: "Com nojo", hint: "Nariz franzido, língua para fora", face: "nojo", color: "#84cc16" },
+  { label: "Tranquilo", hint: "Rosto relaxado, respiração calma", face: "tranquilo", color: "#34c79a" },
 ]
 
 export const trafficSteps = [
