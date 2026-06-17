@@ -1,5 +1,15 @@
 import Image from 'next/image'
-import { Check, CreditCard } from 'lucide-react'
+import {
+  Check,
+  CreditCard,
+  Disc3,
+  Laugh,
+  TrafficCone,
+  Layers,
+  Drama,
+  Brain,
+  Sparkles,
+} from 'lucide-react'
 import { Reveal } from '@/components/reveal'
 
 const includes = [
@@ -9,6 +19,15 @@ const includes = [
   'Mais de 50 emoções ilustradas',
   'Conteúdo pronto para imprimir em casa',
   'Atividades para escrever e colorir',
+]
+
+const materials = [
+  { icon: Disc3, label: 'Roda das Emoções' },
+  { icon: Laugh, label: 'Jogo das Caras' },
+  { icon: TrafficCone, label: 'Semáforo Emocional' },
+  { icon: Layers, label: 'Baralho Divertidamente' },
+  { icon: Drama, label: 'Teatro das Expressões' },
+  { icon: Brain, label: 'Jogo das Sensações' },
 ]
 
 export function Offer() {
@@ -26,6 +45,31 @@ export function Offer() {
             <h2 className="mt-5 text-balance font-heading text-3xl font-semibold leading-tight md:text-4xl">
               Comece hoje a cultivar a inteligência emocional da sua família
             </h2>
+
+            <p className="mx-auto mt-5 max-w-xl text-pretty text-primary-foreground/85">
+              São <strong className="font-semibold text-primary-foreground">9 materiais + bônus</strong>, com
+              atividades práticas e lúdicas para auxiliar no desenvolvimento de habilidades socioemocionais!
+            </p>
+
+            <div className="mx-auto mt-8 max-w-xl rounded-3xl bg-background/10 p-6 text-left ring-1 ring-background/20">
+              <p className="text-center font-heading text-sm font-bold uppercase tracking-wide text-primary-foreground/90">
+                Você vai receber:
+              </p>
+              <ul className="mt-5 grid gap-3 sm:grid-cols-2">
+                {materials.map(({ icon: Icon, label }) => (
+                  <li key={label} className="flex items-center gap-3">
+                    <span className="flex size-9 shrink-0 items-center justify-center rounded-full bg-sunny text-sunny-foreground">
+                      <Icon className="size-5" aria-hidden="true" />
+                    </span>
+                    <span className="font-medium">{label}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-5 flex items-center justify-center gap-2 text-center font-heading text-base font-bold text-sunny">
+                <Sparkles className="size-5" aria-hidden="true" />
+                e muito mais!
+              </p>
+            </div>
 
             <div className="mt-8 flex items-end justify-center gap-3">
               <span className="text-lg font-medium text-primary-foreground/70 line-through">
