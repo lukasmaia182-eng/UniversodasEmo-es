@@ -153,12 +153,15 @@ function Deck() {
             className="flex aspect-[3/4] flex-col items-center justify-center rounded-2xl border-2 border-dashed border-foreground/40 p-3 text-center"
             style={{ backgroundColor: `${c.color}1a` }}
           >
-            <span
-              className="flex h-12 w-12 items-center justify-center rounded-full text-base font-extrabold text-white"
-              style={{ backgroundColor: c.color }}
-            >
-              {c.label.charAt(0)}
-            </span>
+            <div className="flex h-20 w-20 items-center justify-center">
+              <Image
+                src={c.image || "/placeholder.svg"}
+                alt={`Mascote ${c.mascot} da emoção ${c.label}`}
+                width={96}
+                height={96}
+                className="h-full w-full object-contain"
+              />
+            </div>
             <span className="mt-2 font-heading text-sm font-bold text-foreground">{c.label}</span>
             <span className="text-xs text-muted-foreground">{c.mascot}</span>
           </div>

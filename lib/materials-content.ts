@@ -191,14 +191,14 @@ export const trafficSteps = [
 ]
 
 export const deckCards = [
-  { label: "Alegria", mascot: "Lumi", color: "#f4b400" },
-  { label: "Tristeza", mascot: "Nuvi", color: "#5b8def" },
-  { label: "Raiva", mascot: "Foguinho", color: "#ef4444" },
-  { label: "Medo", mascot: "Tibo", color: "#8b5cf6" },
-  { label: "Calma", mascot: "Sereno", color: "#34c79a" },
-  { label: "Surpresa", mascot: "Zazá", color: "#22c1bd" },
-  { label: "Coragem", mascot: "Bravo", color: "#f97316" },
-  { label: "Gratidão", mascot: "Lina", color: "#f59e0b" },
+  { label: "Alegria", mascot: "Lumi", color: "#f4b400", image: "/mascote-alegria.png" },
+  { label: "Tristeza", mascot: "Nuvi", color: "#5b8def", image: "/mascote-tristeza.png" },
+  { label: "Raiva", mascot: "Foguinho", color: "#ef4444", image: "/mascote-raiva.png" },
+  { label: "Medo", mascot: "Tibo", color: "#8b5cf6", image: "/mascote-medo.png" },
+  { label: "Calma", mascot: "Sereno", color: "#34c79a", image: "/mascote-calma.png" },
+  { label: "Surpresa", mascot: "Zazá", color: "#22c1bd", image: "/mascote-surpresa.png" },
+  { label: "Coragem", mascot: "Bravo", color: "#f97316", image: "/mascote-coragem.png" },
+  { label: "Gratidão", mascot: "Lina", color: "#f59e0b", image: "/mascote-gratidao.png" },
 ]
 
 export const theaterScenes = [
