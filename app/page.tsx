@@ -6,6 +6,7 @@ import { Problem } from "@/components/problem"
 import { Solution } from "@/components/solution"
 import { Showcase } from "@/components/showcase"
 import { Collection } from "@/components/collection"
+import { Materials } from "@/components/materials"
 import { Creator } from "@/components/creator"
 import { HowItWorks } from "@/components/how-it-works"
 import { Testimonials } from "@/components/testimonials"
@@ -29,6 +30,7 @@ export default function Page() {
         <Characters />
         <BookPreview />
         <Collection />
+        <Materials />
         <Creator />
         <HowItWorks />
         <Benefits />

@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { AccessHeader } from "@/components/access/access-header"
 import { AccessHero } from "@/components/access/access-hero"
 import { AccessGuide } from "@/components/access/access-guide"
+import { MaterialsCollection } from "@/components/access/materials-collection"
 import { EmotionsCollection } from "@/components/access/emotions-collection"
 import { AccessBonus } from "@/components/access/access-bonus"
 import { Heart } from "lucide-react"
@@ -20,6 +21,7 @@ export default function SeuAcessoPage() {
       <main>
         <AccessHero />
         <AccessGuide />
+        <MaterialsCollection />
         <EmotionsCollection />
         <AccessBonus />
 
