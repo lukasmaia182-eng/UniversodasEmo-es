@@ -1,9 +1,18 @@
 import Image from "next/image"
-import { Check, ShieldCheck, Zap, Lock } from "lucide-react"
+import { Check, ShieldCheck, Zap, Lock, Disc3, Laugh, TrafficCone, Layers, Drama, Brain, Sparkles } from "lucide-react"
 import { CtaButton } from "@/components/cta-button"
 import { Reveal } from "@/components/reveal"
 
 const checklist = ["Mais de 50 emoções", "Material 100% digital", "Acesso imediato", "Para crianças e adultos"]
+
+const materials = [
+  { icon: Disc3, label: "Roda das Emoções" },
+  { icon: Laugh, label: "Jogo das Caras" },
+  { icon: TrafficCone, label: "Semáforo Emocional" },
+  { icon: Layers, label: "Baralho Divertidamente" },
+  { icon: Drama, label: "Teatro das Expressões" },
+  { icon: Brain, label: "Jogo das Sensações" },
+]
 
 const seals = [
   { icon: Lock, label: "Compra segura" },
@@ -55,6 +64,27 @@ export function Hero() {
                 </li>
               ))}
             </ul>
+
+            <div className="mt-7 rounded-3xl border border-border bg-card p-5 text-left">
+              <p className="flex items-center gap-2 font-heading text-sm font-bold uppercase tracking-wide text-foreground">
+                <Sparkles className="size-4 text-primary" aria-hidden="true" />
+                São 9 materiais + bônus que você vai receber:
+              </p>
+              <ul className="mt-4 grid gap-3 sm:grid-cols-2">
+                {materials.map(({ icon: Icon, label }) => (
+                  <li key={label} className="flex items-center gap-2.5">
+                    <span className="flex size-8 shrink-0 items-center justify-center rounded-full bg-sunny text-sunny-foreground">
+                      <Icon className="size-4" aria-hidden="true" />
+                    </span>
+                    <span className="font-semibold text-foreground">{label}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-4 flex items-center gap-2 font-heading text-sm font-bold text-coral">
+                <Sparkles className="size-4" aria-hidden="true" />
+                e muito mais!
+              </p>
+            </div>
 
             <div className="mt-7 flex flex-col items-center gap-1 md:items-start">
               <p className="text-sm font-semibold text-muted-foreground">
