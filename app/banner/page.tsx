@@ -109,7 +109,7 @@ export default function BannerPage() {
                 <Image src="/mascote-surpresa.png" alt="Zazá" width={64} height={64} className="h-14 w-14 object-contain" />
               </div>
               <div className="mt-3 rounded-lg bg-[#3bb78f] px-2 py-1.5 text-center text-[11px] font-bold leading-tight text-white">
-                Material completo · Mais de 50 emoções ilustradas
+                Material completo · Mais de 70 emoções ilustradas
               </div>
             </div>
           </div>

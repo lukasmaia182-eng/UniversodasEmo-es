@@ -23,7 +23,7 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Universo das Emoções™ | Mais de 50 emoções com ciência, poesia e afeto',
+  title: 'Universo das Emoções™ | Mais de 70 emoções com ciência, poesia e afeto',
   description:
     'Coleção digital que ajuda crianças e adultos a reconhecer, compreender e acolher suas emoções de forma leve, divertida e significativa. Acesso imediato e garantia de 7 dias.',
   generator: 'v0.app',
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Universo das Emoções™',
     description:
-      'Mais de 50 emoções explicadas com ciência, poesia e afeto. Para crianças e adultos.',
+      'Mais de 70 emoções explicadas com ciência, poesia e afeto. Para crianças e adultos.',
     type: 'website',
     locale: 'pt_BR',
   },
