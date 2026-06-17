@@ -3,7 +3,7 @@ import { Check, ShieldCheck, Zap, Lock, Disc3, Laugh, TrafficCone, Layers, Drama
 import { CtaButton } from "@/components/cta-button"
 import { Reveal } from "@/components/reveal"
 
-const checklist = ["Mais de 50 emoções", "Material 100% digital", "Acesso imediato", "Para crianças e adultos"]
+const checklist = ["Mais de 70 emoções", "Material 100% digital", "Acesso imediato", "Para crianças e adultos"]
 
 const materials = [
   { icon: Disc3, label: "Roda das Emoções" },

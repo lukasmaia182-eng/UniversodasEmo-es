@@ -30,7 +30,7 @@ const benefits = [
 ]
 
 const includes = [
-  { icon: BookOpen, title: "+50 EMOÇÕES", sub: "ILUSTRADAS" },
+  { icon: BookOpen, title: "+70 EMOÇÕES", sub: "ILUSTRADAS" },
   { icon: Pencil, title: "ATIVIDADES", sub: "PARA IMPRIMIR" },
   { icon: Users, title: "+50", sub: "PERSONAGENS" },
   { icon: Gamepad2, title: "JOGOS E", sub: "DESAFIOS" },

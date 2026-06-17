@@ -16,7 +16,7 @@ const includes = [
   'Acesso vitalício',
   'Atualizações futuras',
   'Garantia de 7 dias',
-  'Mais de 50 emoções ilustradas',
+  'Mais de 70 emoções ilustradas',
   'Conteúdo pronto para imprimir em casa',
   'Atividades para escrever e colorir',
 ]

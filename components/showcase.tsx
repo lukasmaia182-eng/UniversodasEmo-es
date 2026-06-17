@@ -3,7 +3,7 @@ import { Check } from "lucide-react"
 import { Reveal } from "@/components/reveal"
 
 const benefits = [
-  "Mais de 50 emoções ilustradas",
+  "Mais de 70 emoções ilustradas",
   "Linguagem simples para crianças",
   "Atividades práticas para fazer em família",
   "Baseado em educação socioemocional",

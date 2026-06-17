@@ -199,6 +199,10 @@ export const deckCards = [
   { label: "Surpresa", mascot: "Zazá", color: "#22c1bd", image: "/mascote-surpresa.png" },
   { label: "Coragem", mascot: "Bravo", color: "#f97316", image: "/mascote-coragem.png" },
   { label: "Gratidão", mascot: "Lina", color: "#f59e0b", image: "/mascote-gratidao.png" },
+  { label: "Vergonha", mascot: "Timi", color: "#fb7185", image: "/mascote-vergonha.png" },
+  { label: "Curiosidade", mascot: "Pispi", color: "#0ea5e9", image: "/mascote-curiosidade.png" },
+  { label: "Orgulho", mascot: "Téo", color: "#f59e0b", image: "/mascote-orgulho.png" },
+  { label: "Carinho", mascot: "Mel", color: "#fb7185", image: "/mascote-carinho.png" },
 ]
 
 export const theaterScenes = [

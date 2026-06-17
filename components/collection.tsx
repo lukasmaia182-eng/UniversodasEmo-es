@@ -30,7 +30,7 @@ export function Collection() {
             Dentro da coleção
           </span>
           <h2 className="mt-4 text-balance font-heading text-3xl font-semibold leading-tight text-foreground md:text-4xl">
-            Mais de 50 emoções organizadas de forma simples e acolhedora
+            Mais de 70 emoções organizadas de forma simples e acolhedora
           </h2>
           <p className="mt-4 text-pretty text-lg leading-relaxed text-muted-foreground">
             Cada emoção ganha uma página ilustrada, com explicação acessível e
