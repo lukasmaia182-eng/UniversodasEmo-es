@@ -1,5 +1,4 @@
 import Image from "next/image"
-import { EmotionFace } from "@/components/materials/emotion-face"
 import {
   wheelSegments,
   faceCards,
@@ -95,7 +94,18 @@ function Faces() {
             key={c.label}
             className="flex flex-col items-center justify-center rounded-2xl border-2 border-dashed border-foreground/40 p-3 text-center"
           >
-            <EmotionFace expression={c.face} color={c.color} className="h-20 w-20 sm:h-24 sm:w-24" />
+            <div
+              className="flex h-24 w-24 items-center justify-center rounded-2xl sm:h-28 sm:w-28"
+              style={{ backgroundColor: `${c.color}1a` }}
+            >
+              <Image
+                src={c.image || "/placeholder.svg"}
+                alt={`Mascote da emoção ${c.label}`}
+                width={112}
+                height={112}
+                className="h-full w-full object-contain"
+              />
+            </div>
             <span className="mt-2 font-heading text-base font-bold text-foreground">{c.label}</span>
             <span className="mt-0.5 text-xs leading-snug text-muted-foreground">{c.hint}</span>
           </div>
