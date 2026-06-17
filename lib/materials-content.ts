@@ -154,19 +154,19 @@ export const wheelSegments = [
   { label: "Gratidão", color: "#f59e0b" },
 ]
 
-export const faceCards = [
-  { label: "Feliz", hint: "Sorria bem grande" },
-  { label: "Triste", hint: "Boca para baixo, olhos caídos" },
-  { label: "Bravo", hint: "Sobrancelhas franzidas" },
-  { label: "Assustado", hint: "Olhos arregalados" },
-  { label: "Surpreso", hint: "Boca em formato de O" },
-  { label: "Animado", hint: "Sorriso e olhos brilhando" },
-  { label: "Com sono", hint: "Olhos quase fechados, bocejo" },
-  { label: "Envergonhado", hint: "Bochechas coradas, olhar baixo" },
-  { label: "Curioso", hint: "Cabeça inclinada, olhos atentos" },
-  { label: "Orgulhoso", hint: "Queixo erguido, peito estufado" },
-  { label: "Com nojo", hint: "Nariz franzido, língua para fora" },
-  { label: "Tranquilo", hint: "Rosto relaxado, respiração calma" },
+export const faceCards: { label: string; hint: string; image: string; color: string }[] = [
+  { label: "Alegria", hint: "Sorria bem grande e pule de felicidade", image: "/mascote-alegria.png", color: "#f4b400" },
+  { label: "Tristeza", hint: "Boca para baixo, ombros caídos", image: "/mascote-tristeza.png", color: "#5b8def" },
+  { label: "Raiva", hint: "Sobrancelhas franzidas, braços cruzados", image: "/mascote-raiva.png", color: "#ef4444" },
+  { label: "Medo", hint: "Olhos arregalados, encolha o corpo", image: "/mascote-medo.png", color: "#8b5cf6" },
+  { label: "Surpresa", hint: "Boca em formato de O, mãos no rosto", image: "/mascote-surpresa.png", color: "#22c1bd" },
+  { label: "Vergonha", hint: "Bochechas coradas, olhar baixo", image: "/mascote-vergonha.png", color: "#fb7185" },
+  { label: "Gratidão", hint: "Mãos no coração, sorriso suave", image: "/mascote-gratidao.png", color: "#f59e0b" },
+  { label: "Calma", hint: "Respire fundo, rosto relaxado", image: "/mascote-calma.png", color: "#34c79a" },
+  { label: "Coragem", hint: "Queixo erguido, postura firme", image: "/mascote-coragem.png", color: "#f97316" },
+  { label: "Curiosidade", hint: "Cabeça inclinada, olhos atentos", image: "/mascote-curiosidade.png", color: "#0ea5e9" },
+  { label: "Orgulho", hint: "Peito estufado, sorriso confiante", image: "/mascote-orgulho.png", color: "#f59e0b" },
+  { label: "Carinho", hint: "Braços abertos para um abraço", image: "/mascote-carinho.png", color: "#fb7185" },
 ]
 
 export const trafficSteps = [

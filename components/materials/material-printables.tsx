@@ -92,10 +92,22 @@ function Faces() {
         {faceCards.map((c) => (
           <div
             key={c.label}
-            className="flex flex-col items-center justify-center rounded-2xl border-2 border-dashed border-foreground/40 p-4 text-center"
+            className="flex flex-col items-center justify-center rounded-2xl border-2 border-dashed border-foreground/40 p-3 text-center"
           >
-            <span className="font-heading text-lg font-bold text-foreground">{c.label}</span>
-            <span className="mt-1 text-xs leading-snug text-muted-foreground">{c.hint}</span>
+            <div
+              className="flex h-24 w-24 items-center justify-center rounded-2xl sm:h-28 sm:w-28"
+              style={{ backgroundColor: `${c.color}1a` }}
+            >
+              <Image
+                src={c.image || "/placeholder.svg"}
+                alt={`Mascote da emoção ${c.label}`}
+                width={112}
+                height={112}
+                className="h-full w-full object-contain"
+              />
+            </div>
+            <span className="mt-2 font-heading text-base font-bold text-foreground">{c.label}</span>
+            <span className="mt-0.5 text-xs leading-snug text-muted-foreground">{c.hint}</span>
           </div>
         ))}
       </div>
