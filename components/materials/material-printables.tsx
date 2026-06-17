@@ -95,14 +95,14 @@ function Faces() {
             className="flex flex-col items-center justify-center rounded-2xl border-2 border-dashed border-foreground/40 p-3 text-center"
           >
             <div
-              className="flex h-24 w-24 items-center justify-center rounded-2xl sm:h-28 sm:w-28"
+              className="flex h-32 w-32 items-center justify-center rounded-2xl sm:h-36 sm:w-36"
               style={{ backgroundColor: `${c.color}1a` }}
             >
               <Image
                 src={c.image || "/placeholder.svg"}
                 alt={`Mascote da emoção ${c.label}`}
-                width={112}
-                height={112}
+                width={160}
+                height={160}
                 className="h-full w-full object-contain"
               />
             </div>
@@ -150,15 +150,15 @@ function Deck() {
         {deckCards.map((c) => (
           <div
             key={c.label}
-            className="flex aspect-[3/4] flex-col items-center justify-center rounded-2xl border-2 border-dashed border-foreground/40 p-3 text-center"
+            className="flex aspect-[3/4] flex-col items-center justify-center rounded-2xl border-2 border-dashed border-foreground/40 p-2 text-center"
             style={{ backgroundColor: `${c.color}1a` }}
           >
-            <div className="flex h-20 w-20 items-center justify-center">
+            <div className="flex h-32 w-32 items-center justify-center sm:h-36 sm:w-36">
               <Image
                 src={c.image || "/placeholder.svg"}
                 alt={`Mascote ${c.mascot} da emoção ${c.label}`}
-                width={96}
-                height={96}
+                width={160}
+                height={160}
                 className="h-full w-full object-contain"
               />
             </div>
