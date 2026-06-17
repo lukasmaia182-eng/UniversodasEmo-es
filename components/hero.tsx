@@ -38,7 +38,6 @@ export function Hero() {
             </h1>
 
             <div className="relative mt-7 flex justify-center md:hidden">
-              <div className="absolute inset-0 -z-10 translate-y-4 scale-95 rounded-[2.5rem] bg-secondary/60 blur-xl" />
               <Image
                 src="/hero-mockup.png"
                 alt="Livro e tablet do Universo das Emoções cercados pelos mascotes da turma"
@@ -111,7 +110,6 @@ export function Hero() {
         <div className="hidden md:block">
           <Reveal delay={0.15}>
             <div className="relative flex justify-center">
-              <div className="absolute inset-0 -z-10 translate-y-6 scale-95 rounded-[2.5rem] bg-secondary/60 blur-xl" />
               <Image
                 src="/hero-mockup.png"
                 alt="Livro e tablet do Universo das Emoções cercados pelos mascotes da turma"
