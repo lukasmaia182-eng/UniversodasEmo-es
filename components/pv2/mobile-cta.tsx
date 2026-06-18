@@ -4,7 +4,7 @@ export function MobileCtaPv2() {
       <div className="flex items-center justify-between gap-3">
         <div className="leading-tight">
           <p className="text-xs text-muted-foreground line-through">$899 MXN</p>
-          <p className="font-heading text-xl font-bold text-primary">$199 MXN</p>
+          <p className="font-heading text-xl font-bold text-primary">$92.80 MXN</p>
         </div>
         <a
           href="#oferta"

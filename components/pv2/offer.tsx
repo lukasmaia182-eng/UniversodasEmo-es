@@ -77,7 +77,7 @@ export function OfferPv2({
 
             <div className="mt-8 flex items-end justify-center gap-3">
               <span className="text-lg font-medium text-primary-foreground/70 line-through">$899 MXN</span>
-              <span className="font-heading text-5xl font-bold md:text-6xl">$199 MXN</span>
+              <span className="font-heading text-5xl font-bold md:text-6xl">$92.80 MXN</span>
             </div>
             <p className="mt-2 text-primary-foreground/80">
               Pago único · sin mensualidades · imprime cuantas veces quieras

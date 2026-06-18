@@ -104,7 +104,7 @@ export function BookPreviewPv2() {
         <div className="mt-12 flex flex-col items-center gap-3 px-4">
           <p className="text-sm font-semibold text-night-muted">
             De <span className="line-through">$899 MXN</span> por solo{" "}
-            <span className="font-bold text-night-foreground">$199 MXN</span>
+            <span className="font-bold text-night-foreground">$92.80 MXN</span>
           </p>
           <CtaButtonPv2>Comprar con descuento</CtaButtonPv2>
         </div>

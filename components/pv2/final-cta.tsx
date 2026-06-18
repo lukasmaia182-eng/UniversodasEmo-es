@@ -27,11 +27,11 @@ export function FinalCtaPv2() {
             <p className="text-sm font-semibold text-night-muted">
               De <span className="line-through">$899 MXN</span> por solo
             </p>
-            <p className="font-heading text-5xl font-bold text-sunny">$199 MXN</p>
+            <p className="font-heading text-5xl font-bold text-sunny">$92.80 MXN</p>
           </div>
 
           <div className="mt-7 flex justify-center">
-            <CtaButtonPv2 variant="sunny">QUIERO ACCEDER AHORA POR $199 MXN</CtaButtonPv2>
+            <CtaButtonPv2 variant="sunny">QUIERO ACCEDER AHORA POR $92.80 MXN</CtaButtonPv2>
           </div>
 
           <p className="mt-5 text-sm font-medium text-night-muted">
