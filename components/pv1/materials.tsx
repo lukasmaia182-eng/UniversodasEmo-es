@@ -1,12 +1,11 @@
 import Image from "next/image"
-import { Gift, BookOpen, MessagesSquare, Palette } from "lucide-react"
+import { Gift } from "lucide-react"
 import { Reveal } from "@/components/reveal"
 import { CtaButton } from "@/components/cta-button"
 
 type Material = {
-  src?: string
-  icon?: typeof BookOpen
-  emoji?: string
+  src: string
+  emoji: string
   title: string
   description: string
   tone: string
@@ -14,7 +13,7 @@ type Material = {
 
 const materials: Material[] = [
   {
-    icon: BookOpen,
+    src: "/livro-3d.png",
     emoji: "📖",
     title: "Livro das Emoções",
     description:
@@ -66,14 +65,14 @@ const materials: Material[] = [
     tone: "bg-sunny/20",
   },
   {
-    icon: MessagesSquare,
+    src: "/material-cartinhas.png",
     emoji: "💬",
     title: "Cartinhas de Conversa em Família",
     description: "Perguntas prontas para abrir diálogo sem forçar a criança a falar.",
     tone: "bg-mint/20",
   },
   {
-    icon: Palette,
+    src: "/material-colorir.png",
     emoji: "🎨",
     title: "Atividades para Colorir e Preencher",
     description: "Páginas práticas para transformar educação emocional em brincadeira.",
@@ -104,21 +103,13 @@ export function MaterialsPv1() {
           <Reveal key={material.title} delay={i * 0.06}>
             <div className="group flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-card transition-transform hover:-translate-y-1">
               <div className={`flex items-center justify-center p-5 ${material.tone}`}>
-                {material.src ? (
-                  <Image
-                    src={material.src || "/placeholder.svg"}
-                    alt={material.title}
-                    width={420}
-                    height={420}
-                    className="aspect-square w-full rounded-2xl object-cover drop-shadow-md"
-                  />
-                ) : (
-                  material.icon && (
-                    <div className="flex aspect-square w-full items-center justify-center rounded-2xl bg-card/60">
-                      <material.icon className="size-16 text-primary" aria-hidden="true" />
-                    </div>
-                  )
-                )}
+                <Image
+                  src={material.src || "/placeholder.svg"}
+                  alt={material.title}
+                  width={420}
+                  height={420}
+                  className="aspect-square w-full rounded-2xl object-cover drop-shadow-md"
+                />
               </div>
               <div className="flex flex-1 flex-col gap-2 p-6">
                 <h3 className="flex items-center gap-2 font-heading text-xl font-semibold text-foreground">
