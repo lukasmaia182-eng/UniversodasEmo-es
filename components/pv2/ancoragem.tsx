@@ -44,7 +44,7 @@ export function AncoragemPv2() {
             <p className="text-sm font-semibold text-muted-foreground">
               De <span className="line-through">$899 MXN</span> por solo
             </p>
-            <p className="font-heading text-5xl font-bold text-primary">$199 MXN</p>
+            <p className="font-heading text-5xl font-bold text-primary">$92.80 MXN</p>
             <CtaButtonPv2>QUIERO ACCEDER AL KIT AHORA</CtaButtonPv2>
           </div>
         </div>

@@ -71,7 +71,7 @@ export function HeroPv2() {
               <p className="text-sm font-semibold text-muted-foreground">
                 De <span className="line-through">$899 MXN</span> por solo
               </p>
-              <p className="font-heading text-5xl font-bold text-primary">$199 MXN</p>
+              <p className="font-heading text-5xl font-bold text-primary">$92.80 MXN</p>
             </div>
 
             <div className="mt-6 flex flex-col items-center gap-3 md:items-start">
@@ -80,7 +80,7 @@ export function HeroPv2() {
                 href="#oferta"
                 className="text-sm font-semibold text-primary underline-offset-4 hover:underline"
               >
-                Quiero acceder al kit por $199 MXN
+                Quiero acceder al kit por $92.80 MXN
               </a>
             </div>
 
