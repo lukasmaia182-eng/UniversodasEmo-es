@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils"
 import { ArrowRight } from "lucide-react"
 
-const CHECKOUT_URL = "#oferta"
+const CHECKOUT_URL = "https://pay.hotmart.com/L102630763K?off=q0l4cwd7&checkoutMode=10"
 
 export function CtaButtonPv2({
   children = "Quiero asegurar mi acceso con descuento",
@@ -15,6 +15,8 @@ export function CtaButtonPv2({
   return (
     <a
       href={CHECKOUT_URL}
+      target="_blank"
+      rel="noopener noreferrer"
       className={cn(
         "group inline-flex items-center justify-center gap-2 rounded-full px-7 py-4 text-base font-extrabold shadow-lg transition-transform duration-200 hover:-translate-y-0.5 active:translate-y-0 sm:text-lg",
         variant === "primary" && "bg-primary text-primary-foreground shadow-primary/30",
