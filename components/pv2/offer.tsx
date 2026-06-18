@@ -31,7 +31,7 @@ const materials = [
 ]
 
 export function OfferPv2({
-  checkoutUrl = "#oferta",
+  checkoutUrl = "https://pay.hotmart.com/L102630763K?off=q0l4cwd7&checkoutMode=10",
 }: {
   checkoutUrl?: string
 }) {
