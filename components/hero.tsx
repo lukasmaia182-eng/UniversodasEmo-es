@@ -28,13 +28,13 @@ export function Hero() {
       <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-12 sm:px-6 md:grid-cols-2 md:py-20">
         <Reveal>
           <div className="text-center md:text-left">
-            <span className="inline-flex items-center gap-2 rounded-full bg-sunny px-4 py-1.5 text-sm font-bold text-sunny-foreground">
-              Coleção digital de inteligência emocional
+            <span className="inline-flex items-center gap-2 rounded-full bg-coral px-4 py-1.5 text-sm font-bold text-coral-foreground">
+              Para pais que não aguentam mais as crises
             </span>
             <h1 className="mt-5 text-balance font-heading text-4xl font-bold leading-[1.05] text-foreground sm:text-5xl lg:text-6xl">
-              <span className="text-coral">7 dias</span> para ajudar seu filho a entender melhor suas{" "}
-              <span className="text-primary">emoções</span> e melhorar suas{" "}
-              <span className="text-primary">reações</span>
+              As <span className="text-coral">birras</span>, o choro e as crises de raiva{" "}
+              <span className="text-coral">acabam</span> quando seu filho aprende a{" "}
+              <span className="text-primary">dizer o que sente</span>
             </h1>
 
             <div className="relative mt-7 flex justify-center md:hidden">
@@ -49,8 +49,9 @@ export function Hero() {
             </div>
 
             <p className="mt-5 text-pretty text-lg leading-relaxed text-muted-foreground">
-              Uma coleção criada para ajudar crianças e adultos a compreenderem suas emoções com ciência, ternura e
-              muita imaginação.
+              Quando a criança não consegue colocar em palavras o que sente, ela explode em birra, choro e gritaria. O{" "}
+              <strong className="font-bold text-foreground">Universo das Emoções</strong> dá a ela as palavras e a você
+              as ferramentas para acabar com as crises em poucos dias, com atividades simples de fazer hoje mesmo.
             </p>
 
             <ul className="mx-auto mt-7 grid max-w-md gap-3 text-left sm:grid-cols-2 md:mx-0">

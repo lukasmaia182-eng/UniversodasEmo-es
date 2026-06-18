@@ -14,7 +14,7 @@ export function SiteHeader() {
           </span>
         </a>
         <p className="hidden max-w-xs text-right text-sm font-semibold leading-snug text-muted-foreground md:block">
-          <span className="text-primary">7 dias</span> para ajudar seu filho a entender e acolher as próprias emoções.
+          O fim das <span className="text-coral">birras</span> começa quando seu filho aprende a dizer o que sente.
         </p>
       </div>
     </header>
