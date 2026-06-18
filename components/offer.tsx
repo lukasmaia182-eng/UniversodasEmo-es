@@ -30,7 +30,11 @@ const materials = [
   { icon: Brain, label: 'Jogo das Sensações' },
 ]
 
-export function Offer() {
+export function Offer({
+  checkoutUrl = 'https://checkout.perfectpay.com.br/pay/PPU38CQD726',
+}: {
+  checkoutUrl?: string
+}) {
   return (
     <section id="oferta" className="mx-auto max-w-6xl px-4 py-16 md:py-24">
       <Reveal>
@@ -103,7 +107,7 @@ export function Offer() {
                 className="size-20 shrink-0 animate-mascot-sway drop-shadow-lg sm:size-28"
               />
               <a
-                href="https://checkout.perfectpay.com.br/pay/PPU38CQD726"
+                href={checkoutUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex animate-cta-pulse items-center justify-center rounded-full bg-sunny px-6 py-4 text-sm font-extrabold text-sunny-foreground shadow-lg shadow-black/20 transition-transform hover:-translate-y-0.5 sm:px-8 sm:text-base"
