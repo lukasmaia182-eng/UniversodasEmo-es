@@ -87,27 +87,33 @@ function Wheel() {
 /* ---------- Jogo das Caras ---------- */
 function Faces() {
   return (
-    <Sheet title="Cartas das Expressões" hint="Recorte as cartas e use para imitar e adivinhar as emoções.">
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
+    <Sheet
+      title="Cartas das Expressões"
+      hint="São 36 emoções! Recorte as cartas e use para imitar e adivinhar cada uma."
+    >
+      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
         {faceCards.map((c) => (
           <div
             key={c.label}
-            className="flex flex-col items-center justify-center rounded-2xl border-2 border-dashed border-foreground/40 p-3 text-center"
+            className="flex flex-col items-center justify-center rounded-2xl border-2 border-dashed border-foreground/40 bg-card p-3 text-center"
+            style={{ borderColor: `${c.color}80` }}
           >
-            <div
-              className="flex h-32 w-32 items-center justify-center rounded-2xl sm:h-36 sm:w-36"
-              style={{ backgroundColor: `${c.color}1a` }}
-            >
+            <div className="flex aspect-square w-full items-center justify-center">
               <Image
                 src={c.image || "/placeholder.svg"}
                 alt={`Mascote da emoção ${c.label}`}
-                width={160}
-                height={160}
-                className="h-full w-full object-contain"
+                width={200}
+                height={200}
+                className="h-full w-full object-contain mix-blend-multiply"
               />
             </div>
-            <span className="mt-2 font-heading text-base font-bold text-foreground">{c.label}</span>
-            <span className="mt-0.5 text-xs leading-snug text-muted-foreground">{c.hint}</span>
+            <span
+              className="mt-1 inline-block rounded-full px-3 py-0.5 font-heading text-sm font-bold text-white"
+              style={{ backgroundColor: c.color }}
+            >
+              {c.label}
+            </span>
+            <span className="mt-1 text-xs leading-snug text-muted-foreground">{c.hint}</span>
           </div>
         ))}
       </div>
